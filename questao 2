@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+	
+	setlocale(LC_ALL, "Portuguese_Brazil");
+    int A, B, C, SOMA;
+    
+  printf ("Somatorio de numeros positivos: \n");
+  
+  
+  printf ("Primeiro numero: \n");
+  scanf("%d",&A);
+  
+  printf("segundo numero:\n ");
+
+    
+   while (A < 0){
+  	
+   printf ("o numeros não pode ser positivos: \n");
+   printf ("tente novamente: \n");
+   printf ("primeiro numero: \n");
+   scanf("%d",&A);
+
+   
+  }
+  
+  scanf("%d", &B);
+   while (B > 0){
+  printf ("o numeros não pode ser positivos: \n");
+   printf ("tente novamente: \n");
+   printf ("Segundo  numero: \n");
+   scanf("%d",&B);
+   	
+   }
+  
+  
+  system("pause");
+   
+    return 0;
+}
